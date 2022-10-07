@@ -20,9 +20,9 @@ namespace Ques_10
         {
             Console.WriteLine("Flower decorations to be completed on stage.");
         }
-        public static void cheif_guest()
+        public static bool cheif_guest()
         {
-            Console.WriteLine("Chief guest to be picked up from the airport");
+           return true;
 
         }
         public static async void Food_area()
@@ -40,12 +40,15 @@ namespace Ques_10
 
         static async Task Main(string[] args)
         {
-               cheif_guest();
-            
+               if(cheif_guest()){
+                    Console.WriteLine("Chief guest to be picked up from the airport");
+               }else{
+                      Flower();
+                      Food_area();
+                      Arrange();
+               }
            
-                Flower();
-                Food_area();
-                Arrange();
+             
            
            
 
