@@ -1,0 +1,121 @@
+html{
+    overflow:hidden;
+    margin: 0 auto;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+}
+
+body{
+    text-decoration: none;
+    padding: 0px ;
+    margin:0px auto;
+} 
+nav {
+    border: 5px;
+    background-color: black;
+    color: white;
+    margin: 0%;
+    padding: 20px;  
+    width: 100%;
+}
+ 
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    left: 10px;
+}
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  max-height: 40px;
+    
+   
+}
+img{
+    width: 700px;
+    height: auto;
+}
+h1{
+    position: fixed;
+    top: 200px;
+    right: 50px;
+}
+#home{
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+#about{
+    position: relative;
+    top: 5px;
+    left: 50px;
+}
+#team{
+    position: relative;
+    top: 5px;
+    left: 100px;
+}
+#life{
+    position: relative;
+    top: 5px;
+    left: 150px;
+}
+#career{
+    position: relative;
+    top: 5px;
+    left: 200px;
+}
+#login{
+    position: relative;
+    top: 5px;
+  
+   left: 700px;
+}
+#sign{
+    position: relative;
+    top: 5px;
+    left: 550px;
+}
+#contact{
+    position: relative;
+    top: 5px;
+    left: 320px;
+}
+.input{
+    display: grid;
+    background-color: white;
+    width: 300px;
+    height: 150px;
+    position: fixed;
+    top: 150px;
+    left: 470px;
+    font-size: 30px;
+}
+#Email{
+    font-size: 20px;
+   
+}
+
+.signup{
+    display: grid;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    top: 150px;
+    left: 470px;
+    font-size: 20px;
+}
+.SignUp{
+    font-size: 20px;
+    height: 20px;
+}
+
+

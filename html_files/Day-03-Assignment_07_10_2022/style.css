@@ -1,0 +1,259 @@
+/* Type your code here */
+html{
+    /* overflow:hidden; */
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+	background-image: url('assets/background-image1.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right;
+  }
+  .logo{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+  }
+  .heading{
+	position: fixed;
+	left: 60px;
+	/* top: 20px; */
+	/* float: left; */
+	height: 150px;
+	width: 600px;
+	
+  }
+.grid-Container{
+	display: grid;
+	grid-template-columns:repeat(7,1fr);
+	grid-gap: 0px;
+	position: relative;
+	top: 150px;
+	left: 80px;
+	width: 830px;
+	background-color: blanchedalmond;
+	height: auto;
+}
+.row_1{
+	background-color: red;
+	color: white;
+	grid-column: 1/8;
+	border: 1px solid grey;
+	height: 30px;
+}
+.row_2{
+	background-color:white;
+	color: black;  
+	grid-column: 1/8;
+	grid-row: 2/3;
+	border: 1px solid grey;
+	height: 30px;
+}
+.B1{
+	float: left;
+	width: 20px;
+	position: relative;
+	left: 360px;
+	/* border: 1px solid grey; */
+}
+.B2{
+	float: left;
+	width: 20px;
+	position: relative;
+	left: 400px;
+	/* border: 1px solid grey; */
+}
+.B3{
+	float: left;
+	width: 20px;
+	position: relative;
+	left: 440px;
+	/* border: 1px solid grey; */
+}
+.B4{
+	float: left;
+	width: 20px;
+	position: relative;
+	left: 485px;
+	/* border: 1px solid grey; */
+}
+.B5{
+	float: left;
+	width: 20px;
+	position: relative;
+	left: 540px;
+	/* border: 1px solid grey; */
+}
+.row_3{
+	background-color:white;
+	color: black;  
+	grid-column: 1/8;
+	grid-row: 3/4;
+	border: 1px solid grey;
+	height: 30px;
+	
+}
+a{
+	text-decoration: none;
+}
+.row_4{
+	background-color:white;
+	color: black;  
+	grid-column: 1/8;
+	grid-row: 4/5;
+	border: 1px solid grey;
+	height: 30px;
+}
+.row_5{
+	background-color:white;
+	color: black;  
+	grid-column: 1/8;
+	grid-row: 5/6;
+	border: 1px solid grey;
+	height: 30px;
+}
+.row_6{
+	background-color:white;
+	color: black;  
+	grid-column: 1/8;
+	grid-row: 6/7;
+	border: 1px solid grey;
+	height: 30px;
+}
+.row_7{
+	background-color:white;
+	color: black;  
+	grid-column: 1/8;
+	grid-row: 7/8;
+	border: 1px solid grey;
+	height: 30px;
+}
+.row_8{
+	background-color:white;
+	color: black;  
+	grid-column: 1/8;
+	grid-row: 8/9;
+	border: 1px solid grey;
+	height: 30px;
+}
+.row_9{
+	background-color:white;
+	color: black;  
+	grid-column: 1/8;
+	grid-row: 9/10;
+	border: 1px solid grey;
+	height: 30px;
+}
+.row_10{
+	background-color:white;
+	color: black;  
+	grid-column: 1/8;
+	grid-row: 10/11;
+	border: 1px solid grey;
+	height: 30px;
+}
+.row_11{
+	background-color:white;
+	color: black;  
+	grid-column: 1/8;
+	grid-row: 11/12;
+	border: 1px solid grey;
+	height: 30px;
+}
+.Num{
+	float: left;
+	width: 76px;
+	position: relative;
+	left: 600px; 
+	/* border: 1px solid yellow; */
+}
+.col1{
+	float: left;
+	width: 150px;
+	position: relative;
+	left: 20px;
+	/* border: 1px solid grey; */
+	
+}
+.col2{
+	float: left;
+	width: 250px;
+	position: relative;
+	left: 80px;
+	/* border: 1px solid grey; */
+}
+.col3{
+	float: left;
+	width: 45px;
+	position: relative;
+	left: 110px;
+	/* border: 1px solid grey; */
+}
+.col4{
+	float: left;
+	width: 45px;
+	position: relative;
+	left: 130px;
+	/* border: 1px solid grey; */
+}
+.col5{
+	float: left;
+	width: 45px;
+	position: relative;
+	left: 150px;
+	/* border: 1px solid grey; */
+}
+.col6{
+	float: left;
+	width: 45px;
+	position: relative;
+	left: 170px;
+	/* border: 1px solid grey; */
+}
+.col7{
+	float: left;
+	width: 45px;
+	position: relative;
+	left: 190px;
+	/* border: 1px solid grey; */
+}
+
+.Extras{
+	float: left;
+	width: 200px;
+	position: relative;
+	left: 362px;
+	/* border: 1px solid grey; */
+}
+.total{
+	float: left;
+	width: 200px;
+	position: relative;
+	left: 362px;
+	/* border: 1px solid grey; */
+}
+.not_bat{
+	float: left;
+	width: 500px;
+	position: relative;
+	left: 80px;
+	/* border: 1px solid grey; */
+}
+
+/* change the font family and spacing as per your project font */
+.footer{
+    display:flex;
+    flex-direction: row;
+    align-content: flex-end;
+	position: relative;
+	top: 190px;
+	margin-left: 80px;
+	font-size: 18px;
+	font-family: Nunito Sans;
+    font-style: normal;
+   
+}
