@@ -42,10 +42,11 @@ namespace Ques_10
         {
                if(cheif_guest()){
                     Console.WriteLine("Chief guest to be picked up from the airport");
-               }else{
                       Flower();
                       Food_area();
                       Arrange();
+               }else{
+                      Console.WriteLine("Chief guest has not come!");
                }
            
              
