@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Higher Order Function</title>
+</head>
+<script>
+
+//const food = ["pizza"," burger"," fingerChips"," donut"," springRoll"];
+
+//Function #1: Array Slice
+
+// const modifiedFood = food.slice(1,4);
+// document.write(modifiedFood);
+
+
+//Function #2: Array Splice
+
+//  food.splice(2,0,"noodles","icecream");
+//  const modifiedFood = food;
+// document.write(modifiedFood);
+
+
+//Function #3: Filter
+
+//Take numberArray as
+
+//const numberArray = [12,324,213,4,2,3,45,4234];
+
+//Even Number
+// const isEven = numberArray.filter(iseven);
+
+//  function iseven(ele){
+//     return ele%2==0?true:false;
+//  }
+
+// document.write(isEven);
+
+//Prime Number
+// const isPrime = numberArray.filter(ele=>{
+//     for(var i=2;i<ele;i++){
+//         if(ele%i==0) return false;
+//     }
+//     return true;
+// });
+// document.write(isPrime);
+
+
+//non-Prime Number
+// const non_Prime = numberArray.filter(ele=>{
+//     for(var i=2;i<ele;i++){
+//         if(ele%i==0) return true;
+//     }
+//     return false;
+// });
+// document.write(non_Prime);
+
+
+// Function #5: Lambda
+
+// const isEven = numberArray.filter(even=>even%2==0?true:false);
+// document.write(isEven);
+
+
+//Function #6: Map
+// const myArray = [11, 34, 20, 5, 53, 16];
+
+// const Square_array = myArray.map(function findSquareOfNumbers(ele){
+//      return ele*ele;
+// });
+
+// document.write(Square_array);
+
+// Function #7: Reduce
+
+// const myArray = [2, 3, 5, 10];
+//1.method
+// var total_mul = myArray.reduce((total,ele)=> total*=ele);
+// document.write(total_mul);
+
+//2. method
+var total_mul = myArray.reduce(multiply);
+ function multiply(total,ele){
+    return total *= ele;
+ }
+
+document.write(total_mul);
+</script>
+<body>
+    
+</body>
+</html>
