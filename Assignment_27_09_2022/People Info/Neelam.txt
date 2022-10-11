@@ -1,0 +1,5 @@
+Neelam: [25 ,RJ, 3]
+Raksha: [23 ,HYD, 4]
+Roopam: [26 ,RJ, 2]
+Manish: [21 ,Bihar, 2]
+Mukesh: [21 ,RJ, 3]

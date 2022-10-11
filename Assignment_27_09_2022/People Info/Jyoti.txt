@@ -1,0 +1,5 @@
+Jyoti: [22 ,HYD, 2]
+Nisha: [23 ,Bihar, 2]
+Poojita: [24 ,Delhi, 5]
+Sarvani: [28 ,M.P., 4]
+Akash: [29 ,HYD, 5]

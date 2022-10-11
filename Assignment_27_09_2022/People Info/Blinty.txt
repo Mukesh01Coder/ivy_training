@@ -1,0 +1,5 @@
+Blinty: [22 ,HYD, 2]
+Sanajana: [23 ,Bihar, 2]
+Poojita: [24 ,Delhi, 5]
+Pawan: [28 ,M.P., 4]
+Akash: [29 ,HYD, 5]

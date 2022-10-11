@@ -12,7 +12,7 @@ namespace SimpleInterest
     {
         static void Main(string[] args)
         {
-            cal ele = delegate (double p, double r, double t)
+            cal ele = ( p, r,  t)=>
             {
                 return (p*r*t)/100;
             };
