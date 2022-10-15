@@ -1,0 +1,17 @@
+<p>register works!</p>
+<form [formGroup]="registerForm"  (ngSubmit)="Register()">
+
+Username:
+<input type="username" placeholder="Enter User Name" formControlName="Username"/>
+<br><br>
+E-Mail:
+<input type="email" placeholder="Enter E-mail" formControlName="Email"/>
+<br><br>
+Password:
+<input type="password" placeholder="Enter password" formControlName="Password"/>
+<br><br>
+Confirm Password:
+<input type="Confirm password" placeholder="Enter Confirm Password" formControlName="ConfirmPassword"/>
+<br><br>
+<button >Submit</button>
+</form>
