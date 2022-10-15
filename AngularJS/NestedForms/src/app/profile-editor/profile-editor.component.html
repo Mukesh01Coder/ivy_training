@@ -1,0 +1,36 @@
+<p>profile-editor works!</p>
+
+<form [formGroup]="profileForm" (ngSubmit)="setValues()">
+  <h2>Employee Name:</h2>
+   First Name:
+    <input id="first-name" type="text" formControlName="firstName">
+    <br><br>
+   Last Name: 
+    <input id="last-name" type="text" formControlName="lastName">
+  
+    <br>
+    <div formGroupName="address">
+        <h2>Address:</h2>
+        Country: 
+        <input id="country" type="text" formControlName="Country">
+        <br>  <br>
+
+        State:
+        <input id="state" type="text" formControlName="state">
+        <br>  <br>
+
+        City:
+        <input id="city" type="text" formControlName="city">
+        <br>  <br>
+
+        Street: 
+        <input id="street" type="text" formControlName="street">
+        <br>  <br>
+
+       PIN Code:
+        <input id="PINCode" type="text" formControlName="PINCode">
+    </div>
+    <button>Submit</button>
+  </form>
+
+  
