@@ -8,7 +8,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
-
+import { UsersModule } from './users/users.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { LayoutModule } from './layout/layout.module';
     LayoutModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    UsersModule
     
   ],
   providers: [],
