@@ -1,0 +1,47 @@
+<p>pipes works!</p>
+<!-- Date Pipe -->
+<h2>Date Pipe</h2>
+<div>
+    <p>Today is {{today | date}}</p>
+    <p>Or if you prefer, {{today | date:'fullDate'}}</p>
+    <p>The time is {{today | date:'h:mm a z'}}</p>
+</div>
+
+<!-- currency pipe -->
+<h2>currency pipe</h2>
+<div>
+    <!--output '$0.26'-->
+    <p>A: {{a | currency}}</p>
+
+    <!--output 'CA$0.26'-->
+    <p>A: {{a | currency:'CAD'}}</p>
+
+    <!--output 'CAD0.26'-->
+    <p>A: {{a | currency:'CAD':'code'}}</p>
+
+    <!--output 'CA$0,001.35'-->
+    <p>B: {{b | currency:'CAD':'symbol':'4.2-2'}}</p>
+
+    <!--output '$0,001.35'-->
+    <p>B: {{b | currency:'CAD':'symbol-narrow':'4.2-2'}}</p>
+
+    <!--output '0 001,35 CA$'-->
+    <p>B: {{b | currency:'CAD':'symbol':'4.2-2':'fr'}}</p>
+
+    <!--output 'CLP1' because CLP has no cents-->
+    <p>B: {{b | currency:'CLP'}}</p>
+  </div>
+
+  <!-- Percent Pipe -->
+<h2>Percent Pipe</h2>
+  <div>
+    <!--output '26%'-->
+    <p>A: {{a | percent}}</p>
+
+    <!--output '0,134.950%'-->
+    <p>B: {{b | percent:'4.3-5'}}</p>
+
+    <!--output '0 134,950 %'-->
+    <p>B: {{b | percent:'4.3-5':'fr'}}</p>
+  </div>
+

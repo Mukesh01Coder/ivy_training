@@ -1,0 +1,32 @@
+<p>arr works!</p>
+<ul>
+    <li *ngFor="let emp of employees; index as i">
+        {{i}} :   {{emp.name}}
+    </li>
+    <p>Length of Users is : {{employees.length}} </p>
+</ul>
+<br><br>
+
+<ul>
+    <li *ngFor="let user of users; index as i">
+       
+        <i *ngIf="(user%2==0); then ifBlock else elseBlock"></i>
+       
+       <ng-template #ifBlock>Even Number is: {{user}}</ng-template>
+      
+       <ng-template #elseBlock>Odd Number:{{user}}</ng-template>
+    </li>
+   
+</ul>
+<br><br><br>
+
+<container-element [ngSwitch]="7">
+    <div *ngSwitchCase="1">hello mukesh</div>
+    <div *ngSwitchCase="3">hello radha</div>
+    <div *ngSwitchCase="5">hello manish</div>
+    <div *ngSwitchDefault>hello radha</div>
+  </container-element>
+
+
+  
+
