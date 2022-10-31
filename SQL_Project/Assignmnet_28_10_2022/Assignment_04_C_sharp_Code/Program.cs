@@ -25,14 +25,14 @@ namespace Assignment_04_C_sharp_Code
               
 
                 SqlCommand cmd = new SqlCommand("p2",conn);
-                SqlCommand cmd1 = new SqlCommand("p1", conn);
+               // SqlCommand cmd1 = new SqlCommand("p1", conn);
 
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd1.CommandType = System.Data.CommandType.StoredProcedure;
+                //cmd1.CommandType = System.Data.CommandType.StoredProcedure;
 
                 cmd.Parameters.Add("@d_s_name", System.Data.SqlDbType.VarChar).Value = name;
                
-                cmd1.Parameters.Add("@s_name", System.Data.SqlDbType.VarChar).Value = name;
+               // cmd1.Parameters.Add("@s_name", System.Data.SqlDbType.VarChar).Value = name;
 
                 SqlDataReader reader = cmd.ExecuteReader();
 
@@ -46,17 +46,17 @@ namespace Assignment_04_C_sharp_Code
 
                 }
                 reader.Close();
-                SqlDataReader reader_p1 = cmd1.ExecuteReader();
-                Console.WriteLine();
-                while (reader_p1.Read())
-                {
-                    Console.Write("\n"+reader_p1[0] + "  ");
-                    Console.WriteLine(reader_p1[1] + "  ");
-                }
+                // SqlDataReader reader_p1 = cmd1.ExecuteReader();
+                // Console.WriteLine();
+                // while (reader_p1.Read())
+                // {
+                //     Console.Write("\n"+reader_p1[0] + "  ");
+                //     Console.WriteLine(reader_p1[1] + "  ");
+                // }
 
                 Console.WriteLine("Code Running Successfully successfully");
               
-                reader_p1.Close();
+               // reader_p1.Close();
                 conn.Close();
             }
             catch (SqlException exp)

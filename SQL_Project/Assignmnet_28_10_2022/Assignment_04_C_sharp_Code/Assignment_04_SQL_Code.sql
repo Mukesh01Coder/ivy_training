@@ -32,19 +32,23 @@ select* from student
 --drop table student
 
 
-CREATE OR ALTER PROCEDURE p1 @s_name varchar(20) AS 
+CREATE OR ALTER PROCEDURE p1 @t_mark INT AS 
 BEGIN
-SELECT s_name, SUM(marks) AS s_total from student group by s_name having  s_name = @s_name
+SELECT s_name, SUM(marks) AS s_total from student group by s_name having  SUM(marks) <@t_mark
 END
 
-
+select* from student
 
 CREATE OR ALTER PROCEDURE p2 @d_s_name varchar(20) AS
 BEGIN
-SELECT s_name,SUM(marks) AS Total_marks from student group by s_name having s_name <> @d_s_name
+DECLARE @total_marks AS INT
+SELECT  @total_marks= SUM(marks)  from student group by s_name having s_name = @d_s_name 
 
-EXEC p1 @s_name = @d_s_name
+
+--select SUM(marks) from student group by s_name  having s_name = 'sanjana'
+
+EXEC p1 @total_marks
 END
 
---EXEC p1 'mukesh' 
---EXEC p2 'mukesh'
+--EXEC p1 303 
+--EXEC p2 'sanjana'
